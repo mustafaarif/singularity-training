@@ -1,0 +1,10 @@
+#!/bin/bash
+  
+#SBATCH -J containerGPUJob
+#SBATCH --mem=120G
+#SBATCH --gres=gpu:a100:1
+#SBATCH -t 00:02:00
+#SBATCH --reservation=singularity23
+#SBATCH --account=singularity-gpu
+
+singularity exec --nv tensorflow-gpu.sif python3 mnist.py

@@ -1,0 +1,3 @@
+library(dplyr)
+dim(starwars)
+starwars %>% arrange(desc(height))

@@ -1,0 +1,21 @@
+Bootstrap: docker
+From: ubuntu:22.04
+
+%environment
+    export DEBIAN_FRONTEND=noninteractive
+    export LC_ALL=C
+
+%runscript
+    exec "$@"
+
+%labels
+    Author email@ebi.ac.uk
+    Version v0.0.1
+
+%post
+    apt -y update
+    ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime
+    apt -y install tzdata
+    dpkg-reconfigure --frontend noninteractive tzdata
+    apt -y install r-base r-base-dev
+    Rscript -e 'install.packages("dplyr")'
