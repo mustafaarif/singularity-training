@@ -2,8 +2,6 @@
 
 **Note:** This guide assumes that you are running Ubuntu 20+ and Rocky 8+ release.
 
-Once you complete this Lab, please [answer Post Lab Questions](https://forms.gle/VLDfKq3G29trTSEu6)
-
 ## For Ubuntu
 
 **Step 01:** Ensure repositories are up-to-date
