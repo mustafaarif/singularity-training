@@ -64,5 +64,3 @@ export VERSION=4.0.0 && \
 singularity version
 ```
 
-[Answer Post Lab Questions](https://forms.gle/VLDfKq3G29trTSEu6)
-
